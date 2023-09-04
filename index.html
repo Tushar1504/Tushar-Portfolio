@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tushar's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/7573f65290.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="left">Tushar</div>
+          <div class="right">
+            <ul id="sidemenu">
+              <li><i class="fa-solid fa-house"></i><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><i class="fa-solid fa-phone"></i><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <br /><span id="element"></span><br />From India</h1>
+      </div>
+    </div>
+    <!-- ------------------about------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h3 class="sub-title">About Me</h3>
+            <p>
+              Hi, I'm Tushar Prajapati, a 21-year-old pursing
+              <i>BACHELOR ENGINEERING</i> with a passion for
+              <i>Computer Science & Technology</i>. <br />I pursued my 11-12th
+              grade education in the Science and Mathematics fields from Surat,
+              Gujarat.
+              <br />
+              During my time as a BE student, I gained experience in
+              programming, web development, and database management. I'm
+              interested in pursuing higher studies in MTECH to further develop
+              my skills and knowledge in this exciting field.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Full Stack Development
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Android (Flutter)
+                </li>
+                <h3>Programming</h3>
+                <li><span>JAVA</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>BOOTSTRAP</span></li>
+                <li><span>JAVASCRIPT</span></li>
+                <li><span>REACTJS</span></li>
+                <li><span>SQL</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - 2023</span><br>Internship at Q-spiders and learned Web Development Technologies (Java, Html, CSS, OPPS and SQL).</li>
+                <li>
+                  <span>I Have Develop some projects and through projects learned
+                    skills like</span><br/>JAVA, HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACTJS, SQL  AND
+                    BASICS OF FLUTTER & DART.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020 - Present | CGPA : 7.39</span><br />Bachelor of Engineering from Sal Institute Of Technology and Engineering Research.</li>
+                <li><span>2020 | 54%</span><br/>Mary Matha Bethany Public School</li>
+                <li><span>2018 | 68%</span><br/>Mary Matha Bethany Public School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ---------------------services----------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I can develop Amazing Front-End Websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>App Development</h2>
+                <p>I can develop Android based App using Flutter.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------portfolio---------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/weather.jpg">
+                <div class="layer">
+                    <h3>Weather Website</h3>
+                    <p>Weather website were user can check weather of any city across any country.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/spotify.jpg">
+                <div class="layer">
+                    <h3>Spotify-Clone</h3>
+                    <p>This is an Spotify-Clone website for listening musics.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/notes.jpg">
+                <div class="layer">
+                    <h3>Notes</h3>
+                    <p>Notes App were you can create your daily notes.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------------contact------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> tusharprajapati353@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 8140326737</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100038495813330&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/Tusharp74452267?t=cNztiVQvni70qJeT8X08Tg&s=09" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://instagram.com/tusharrr_016?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/tushar-prajapati-b96457206" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Tushar1504"target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="docs/Tushar_cv.pdf" class="btn btn2" download>Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="xyz123@mail.com" required>
+          <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright &#169; tusharportfolio.com | All rights reserved <i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemeu.style.right = "0";
+      }
+      function closemenu(){
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw3VmV_8xqCvStbYR81zSDH9zCgeT6E_6Pi5Nef4051IsTeubQkfZH6eOLkSDZcn9U-Lw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    alert("Message sent Successfully.");
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML ="Message sent Successfully."
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },3000)
+        form.reset()
+        e.preventDefault()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Tushar Prajapati"],
+        typeSpeed: 80,
+      });
+    </script>
+  </body>
+</html>
